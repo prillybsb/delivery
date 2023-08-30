@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    /* unidade vh (a altura do viewport), permitindo que o body defina uma valor minimo de altura com base na 
+    altura total do viewport do usuário  */
+}
+
+:root{
+    --background-clean: rgb(194, 28, 141) ;
+    --cor-da-empresa: orange;
+}
+
+/* estilização do HEADER - NAV*/
+
+.cabecalho{
+    width: 100%;
+    background-image: url(https://img.freepik.com/fotos-premium/macaroons-franceses-em-fundo-rosa-pastel-cafe-chique-parisiense-sobremesa-comida-doce-e-bolo-macaron-para-design-de-pano-de-fundo-de-ferias-de-marca-de-confeitaria-de-luxo_360074-33930.jpg);
+}
+
+.menu .ul-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ul-menu{
+    list-style: none;
+    padding: 2rem;
+    color:black
+}
+
+.bi-file-person{
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+ul li#image-localizacao{
+    display: flex;
+    padding-right: 0;
+    padding-left: 5rem;
+    margin-right: 8rem;
+    align-items: center;
+}
+
+.bi-geo-alt{
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+.nome-localizacao{
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 5rem;
+}
+
+
+.bi-card-image{
+    font-size: 60px;
+    color: --background-clean;
+}
