@@ -66,3 +66,49 @@ ul li#image-localizacao{
     font-size: 60px;
     color: --background-clean;
 }
+/* Estilização do footer*/
+
+.footer{
+    background-color: var(--background-clean);
+    margin-top: 5rem;
+}
+
+.footer-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-card a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-item{
+    margin: .5rem;
+}
+
+i.bi-house-fill{
+    font-size: 60px ;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-emoji-smile{
+    font-size: 60px ;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-ucp-scan{
+    font-size: 60px ;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-cart{
+    font-size: 60px ;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-stickies{
+    font-size: 60px ;
+    color: var(--cor-da-empresa);
+}
