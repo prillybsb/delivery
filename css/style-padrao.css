@@ -66,6 +66,69 @@ ul li#imagem-localizacao{
     font-size: 60px;
     color: --background-clean;
 }
+
+/*estilização da seção das mensagens*/
+
+section#mensagens-inicio{
+    padding: 2rem;
+    background-color: var(--background-clean);
+}
+
+#nome-empresa{
+    font-style: bold;
+    font-size: 50px;
+    margin-bottom: .5rem;
+    color: var(--cor-da-empresa);
+}
+
+.mensagem{
+    color: black;
+    font-size: 25px;
+}
+
+/*estilização do input*/
+
+section#input{
+    display: flex;
+    padding-top: .5rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+
+}
+
+i.bi-search{
+    position: absolute;
+    color: var(--cor-da-empresa);
+    padding-top: .2rem;
+    padding-left: 4rem;
+    font-size: 40px;
+    
+}
+
+#input-text{
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    padding: 1.2rem 0 1.5rem;
+    padding-left: 4rem;
+    border: 2mm ridge rgb(198, 98, 114);
+    text-align: center;
+
+}
+
+input:focus{
+    outline: 0;
+}
+input [type=text]{
+    color: black
+}
+
+/*Estilização categoria*/
+
+
+
+
 /* Estilização do footer*/
 
 .footer{
