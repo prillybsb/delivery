@@ -1,323 +1,366 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&family=Open+Sans:wght@400;700&display=swap");
 
-*{
-    font-family: "Mukta", Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
+* {
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    min-height: 100vh;
-    /* unidade vh (a altura do viewport), permitindo que o body defina uma valor minimo de altura com base na 
+body {
+  min-height: 100vh;
+  /* unidade vh (a altura do viewport), permitindo que o body defina uma valor minimo de altura com base na 
     altura total do viewport do usuário  */
 }
 
-:root{
-    --background-clean: rgb(194, 28, 141) ;
-    --cor-da-empresa: orange;
+:root {
+  --background-clean: rgb(194, 28, 141);
+  --cor-da-empresa: orange;
 }
 
 /* estilização do HEADER - NAV*/
 
-.cabecalho{
-    width: 100%;
-    background-image: url(https://guaipaembalagem.com.br/wp-content/uploads/2020/03/como-lucrar-vendendo-doces.jpg);
+.cabecalho {
+  width: 100%;
+  background-image: url(https://guaipaembalagem.com.br/wp-content/uploads/2020/03/como-lucrar-vendendo-doces.jpg);
 }
 
-.menu .ul-menu{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    align-items: center;
+.menu .ul-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.ul-menu li{
-    list-style: none;
-    padding: 2rem;
-    color:black
+.ul-menu li {
+  list-style: none;
+  padding: 2rem;
+  color: black;
 }
 
-.bi-file-person{
-    font-size: 60px;
-    color: var(--background-clean);
+.bi-file-person {
+  font-size: 60px;
+  color: var(--background-clean);
 }
 
-ul li#imagem-localizacao{
-    display: flex;
-    padding-right: 0;
-    padding-left: 5rem;
-    margin-right: 8rem;
-    align-items: center;
+ul li#imagem-localizacao {
+  display: flex;
+  padding-right: 0;
+  padding-left: 5rem;
+  margin-right: 8rem;
+  align-items: center;
 }
 
-.bi-geo-alt{
-    font-size: 60px;
-    color: var(--background-clean);
+.bi-geo-alt {
+  font-size: 60px;
+  color: var(--background-clean);
 }
 
-.nome-localizacao{
-    font-size: 40px;
-    padding-left: 0;
-    padding-right: 5rem;
+.nome-localizacao {
+  font-size: 40px;
+  padding-left: 0;
+  padding-right: 5rem;
 }
 
-
-.bi-card-image{
-    font-size: 60px;
-    color: --background-clean;
+.bi-card-image {
+  font-size: 60px;
+  color: --background-clean;
 }
 
 /*estilização da seção das mensagens*/
 
-section#mensagens-inicio{
-    padding: 2rem;
-    background-color: rgb(225, 202, 210);
+section#mensagens-inicio {
+  padding: 2rem;
+  background-color: rgb(225, 202, 210);
 }
 
-#nome-empresa{
-    font-style: bold;
-    font-size: 50px;
-    margin-bottom: .5rem;
-    color: var(--cor-da-empresa);
+#nome-empresa {
+  font-style: bold;
+  font-size: 50px;
+  margin-bottom: 0.5rem;
+  color: var(--cor-da-empresa);
 }
 
-.mensagem{
-    color: black;
-    font-size: 25px;
+.mensagem {
+  color: black;
+  font-size: 25px;
 }
 
 /*estilização do input*/
 
-section#input{
-    display: flex;
-    padding-top: .5rem;
-    width: 90%;
-    margin: auto;
-    align-items: center;
-
+section#input {
+  display: flex;
+  padding-top: 0.5rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
 }
 
-i.bi-search{
-    position: absolute;
-    color: var(--cor-da-empresa);
-    padding-top: .2rem;
-    padding-left: 4rem;
-    font-size: 40px;
-    
+i.bi-search {
+  position: absolute;
+  color: var(--cor-da-empresa);
+  padding-top: 0.2rem;
+  padding-left: 4rem;
+  font-size: 40px;
 }
 
-#input-text{
-    width: 90%;
-    margin: auto;
-    font-size: 25px;
-    padding: 1.2rem 0 1.5rem;
-    padding-left: 4rem;
-    border: 2mm ridge rgb(198, 98, 114);
-    text-align: center;
-
+#input-text {
+  width: 90%;
+  margin: auto;
+  font-size: 25px;
+  padding: 1.2rem 0 1.5rem;
+  padding-left: 4rem;
+  border: 2mm ridge rgb(198, 98, 114);
+  text-align: center;
 }
 
-input:focus{
-    outline: 0;
+input:focus {
+  outline: 0;
 }
-input [type=text]{
-    color: black
+input [type="text"] {
+  color: black;
 }
 
 /*Estilização categoria*/
 
-section#categorias{
-    display: flex;
-    justify-content: space-around;
-   
-
+section#categorias {
+  display: flex;
+  justify-content: space-around;
 }
 
-.categoria-a{
-    margin: 3rem 5rem; 
-    justify-content: center;
-    text-decoration: none;
-    justify-content: center;
+.categoria-a {
+  margin: 3rem 5rem;
+  justify-content: center;
+  text-decoration: none;
+  justify-content: center;
 }
 
-li.categoria{
-    margin: auto;
+li.categoria {
+  margin: auto;
 }
-.categoria{
-    margin: auto;
-    color: black;
-    list-style: none;
-    border: solid 1px var(--cor-da-empresa);
-    border-radius: 2rem;
-    width: 90%;
-    padding: 2rem;
-    margin: 1.2rem;
-    font-weight: 300;
-    text-align: center;
-    transition: transform 0.6s ease-in-out ;
-    transition: box-shadow 0.2s ease-in-out;
-}
-
-.categoria:hover{
-    background-color: var(--cor-da-empresa);
-    border: 5px solid black;
-    transform:scale(1.1);
-    box-shadow: 0 5px 15px black;
+.categoria {
+  margin: auto;
+  color: black;
+  list-style: none;
+  border: solid 1px var(--cor-da-empresa);
+  border-radius: 2rem;
+  width: 90%;
+  padding: 2rem;
+  margin: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  transition: transform 0.6s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
-#categoria-ul{
-    display: flex;
+.categoria:hover {
+  background-color: var(--cor-da-empresa);
+  border: 5px solid black;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px black;
+}
+
+#categoria-ul {
+  display: flex;
 }
 
 /*estilização da seção produto*/
 
-section#card-produtos{
-    display: flex;
+section#card-produtos {
+  display: flex;
 }
-.card-produto{
-    display: block;
-    margin: 2rem;
-    border-radius: 2rem;
-    box-shadow:  0 5px 15px black;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    align-content: center;
-}
-
-.card-produto:hover{
-    box-shadow: inset 50px 0 0 0;
-    color: white;
+.card-produto {
+  display: block;
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 15px black;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  align-content: center;
 }
 
-.card-produto img{
-    display: block;
-    width: 70%;
-    margin: auto;
-    justify-content: center;
+.card-produto:hover {
+  box-shadow: inset 50px 0 0 0;
+  color: white;
 }
 
-h3.nome-do-produto{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    font-size: 20px;
-    color: var(--cor-da-empresa);
-    margin-bottom: 1.3rem;
-    margin-top: 2rem;
+.card-produto img {
+  display: block;
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+}
 
+h3.nome-do-produto {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 20px;
+  color: var(--cor-da-empresa);
+  margin-bottom: 1.3rem;
+  margin-top: 2rem;
 }
 /*estilização da avaliação*/
 
-section#avaliacao{
-    text-align: center;
-    border: .3rem outset var(--cor-da-empresa);
-    outline: .3rem solid rgb(171, 125, 133);
-    box-shadow: 0 0 0 1rem pink;
-    border-radius: 12px;
-    margin: 2rem;
-    padding: 1rem;
-    width: 50%;
-    margin: auto;
-    font: bold 1rem sans-serif;
+section#avaliacao {
+  text-align: center;
+  border: 0.3rem outset var(--cor-da-empresa);
+  outline: 0.3rem solid rgb(171, 125, 133);
+  box-shadow: 0 0 0 1rem pink;
+  border-radius: 12px;
+  margin: 2rem;
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+  font: bold 1rem sans-serif;
 }
 
-#titulo-avalizacao{
-    font-size: 40px;
-    color: var(--cor-da-empresa);
-    text-shadow: 2px 2px black;
+#titulo-avalizacao {
+  font-size: 40px;
+  color: var(--cor-da-empresa);
+  text-shadow: 2px 2px black;
 }
 
-.bi-hand-thumbs-up{
-    font-size: 40ps;
-    color: var(--cor-da-empresa);
-    text-shadow: 2px 2px black ;
+.bi-hand-thumbs-up {
+  font-size: 40ps;
+  color: var(--cor-da-empresa);
+  text-shadow: 2px 2px black;
 }
 
-.bi-hand-thumbs-down{
-    font-size: 40ps;
-    color: var(--cor-da-empresa);
-    text-shadow: 2px 2px black ;
+.bi-hand-thumbs-down {
+  font-size: 40ps;
+  color: var(--cor-da-empresa);
+  text-shadow: 2px 2px black;
 }
 
-#frase-avaliacao{
-    font-size: 30px;
-    color: rgb(122, 120, 120);
-    padding: 1.2rem;
+#frase-avaliacao {
+  font-size: 30px;
+  color: rgb(122, 120, 120);
+  padding: 1.2rem;
 }
-
-
 
 /*estilização do ver mais*/
 
-#ver-mais{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 30px;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+#ver-mais {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
-#ver-mais a{
-    color: rgb(139, 118, 118);
-    text-decoration: none;
-    margin: .8rem 2rem;
+#ver-mais a {
+  color: rgb(139, 118, 118);
+  text-decoration: none;
+  margin: 0.8rem 2rem;
 }
 
 /* Estilização do footer*/
 
-.footer{
-    background-color: var(--background-clean);
-    margin-top: 5rem;
+.footer {
+  background-color: var(--background-clean);
+  margin-top: 5rem;
 }
 
-.footer-card{
+.footer-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.footer-card a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.footer-card li {
+  list-style: none;
+}
+
+.footer-item {
+  margin: 0.5rem;
+}
+
+i.bi-house-fill {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+i.bi-emoji-smile {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+i.bi-upc-scan {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+i.bi-cart {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+i.bi-stickies {
+  font-size: 60px;
+  color: var(--cor-da-empresa);
+}
+
+.footer-nome-item {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+/*usando midia queries para transformar nossa pagina acessivel a tela menores*/
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  header {
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+  }
+  i.bi-geo-alt,
+  .nome-localizacao,
+  i.bi-card-image {
+    display: none;
+  }
+  ul.footer-card {
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .footer-card a {
+    width: 100%;
+  }
 }
 
-.footer-card a{
-    text-decoration: none;
-    text-align: center;
-    color: black;
-}
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  i.bi-search {
+    position: absolute;
+    margin-right: 3rem;
+    padding-left: 2rem;
+  }
 
-.footer-card li{
-    list-style: none ;
-}
+  #categoria-ul{
+    flex-wrap: wrap;
+  }
 
-.footer-item{
-    margin: .5rem;
-}
+  #cards-produtos{
+    flex-wrap: wrap;
+  }
+  div.card-produto{
+    width: 100%;
+  }
 
-i.bi-house-fill{
-    font-size: 60px ;
-    color: var(--cor-da-empresa);
-}
+  span#frase-avaliacao{
+    display: none;
+  }
 
-i.bi-emoji-smile{
-    font-size: 60px ;
-    color: var(--cor-da-empresa);
-}
-
-i.bi-upc-scan{
-    font-size: 60px ;
-    color: var(--cor-da-empresa);
-}
-
-i.bi-cart{
-    font-size: 60px ;
-    color: var(--cor-da-empresa);
-}
-
-i.bi-stickies{
-    font-size: 60px ;
-    color: var(--cor-da-empresa);
-}
-
-.footer-nome-item{
-    font-size: 20px;
-    font-weight: 700;
-    color: black
 }
