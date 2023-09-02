@@ -22,7 +22,13 @@ body {
 .cabecalho {
   width: 100%;
   background-image: url(https://receitinhas.com.br/wp-content/uploads/2016/10/doce-preto-e-branco-tratada--730x365.jpg);
- }
+  background-size: cover;
+    height: 150px; 
+  display: flex;
+  justify-content: flex-end;
+  
+
+}
 
 .menu .ul-menu {
   display: flex;
