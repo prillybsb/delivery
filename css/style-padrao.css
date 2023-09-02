@@ -415,7 +415,9 @@ section {
   .butao-aplicar:hover {
     background-color: #0056b3;
   }
-  
+
+ 
+
   /* Estilizando a seção total */
   #total {
     display: flex;
@@ -535,14 +537,17 @@ section {
   .inputs {
     max-width: 400px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
   }
   
   .inputs label {
     font-size: 18px;
     font-weight: bold;
-    display: block;
     margin-bottom: 5px;
     text-align: left;
+    width: 100%; /* Faz com que os labels ocupem toda a largura disponível */
   }
   
   .inputs input[type="text"] {
@@ -566,9 +571,8 @@ section {
   
   .botao-login:hover {
     background-color: #0056b3;
+   
   }
-  
-
   
   
 /*usando midia queries para transformar nossa pagina acessivel a tela menores* home.html\*/
