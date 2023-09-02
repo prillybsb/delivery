@@ -21,8 +21,8 @@ body {
 
 .cabecalho {
   width: 100%;
-  background-image: url(https://guaipaembalagem.com.br/wp-content/uploads/2020/03/como-lucrar-vendendo-doces.jpg);
-}
+  background-image: url(https://receitinhas.com.br/wp-content/uploads/2016/10/doce-preto-e-branco-tratada--730x365.jpg);
+ }
 
 .menu .ul-menu {
   display: flex;
@@ -313,7 +313,259 @@ i.bi-stickies {
   color: black;
 }
 
-/*usando midia queries para transformar nossa pagina acessivel a tela menores*/
+/*estização pagina produtos*/
+
+#cadastro-produto {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilizando o título */
+  #cadastros-produtos {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilizando os rótulos e campos de entrada */
+  .label-produto {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .input-produtos input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilizando o botão */
+  .butao-cadastrar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .butao-cadastrar:hover {
+    background-color: #0056b3;
+  }
+
+/* Estilizando a seção com imagem do produto */
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .imagem-do-produto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  
+  .nome-produto {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .quantidade {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  
+  .preco {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  /* Estilizando a seção de cupom */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .butao-aplicar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .butao-aplicar:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilizando a seção total */
+  #total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .total-paragrafo {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .ir-pagamento {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ir-pagamento:hover {
+    background-color: #0056b3;
+  }
+
+/* Estilizando a seção cadastro usuario */
+/* Estilizando a seção */
+#cadastro-usuario {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilizando o título */
+  .cadastro-usuario {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Estilizando o formulário */
+  .formulario {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Estilizando os rótulos e campos de entrada */
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input label {
+    font-size: 18px; /* Ajuste o tamanho do texto do label conforme necessário */
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input input[type="text"],
+  .input input[type="email"],
+  .input input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilizando os campos de rádio */
+  .input input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Estilizando o botão */
+  .butao-cadastrar-usuario {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .butao-cadastrar-usuario:hover {
+    background-color: #0056b3;
+  }
+  
+/*estilizando login.html*/
+
+/* Estilizando a seção */
+#nome-da-empresa {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilizando o título */
+  .titulo {
+    font-size: 32px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .titulo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  
+  /* Estilizando os rótulos e campos de entrada */
+  .inputs {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .inputs label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .inputs input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilizando o botão */
+  .botao-login {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .botao-login:hover {
+    background-color: #0056b3;
+  }
+  
+
+  
+  
+/*usando midia queries para transformar nossa pagina acessivel a tela menores* home.html\*/
 
 @media screen and (max-width: 480px) {
   body {
@@ -364,3 +616,4 @@ i.bi-stickies {
   }
 
 }
+

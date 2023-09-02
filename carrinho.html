@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style-padrao.css">
-    <title>Produtos</title>
+    <title>carrinho</title>
 </head>
 
 <body>
@@ -26,66 +26,68 @@
     </header>
 
 
-    <section>
+    <section id="carrinho">
         <i class="bi bi-chevron-double-left"></i>
-        <p>Carrinho</p>
+        <p class="carrinho">Carrinho</p>
         <i class="bi bi-cart-x"></i>
     </section>
 
-    <section>
-        <div>
-            <img src="https://png.pngtree.com/pgn-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"" alt="
+    <section id="imgem-produto">
+        <div class="imagem-do-produto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopQRW8rUjClTxl_3tWu38NUCE_g2ChvkNoQ&usqp=CAU"
+                alt="
                 imagem do produto">
         </div>
-        <div>
-            <p>Nome do Produto</p>
+        <div id="nome-produto">
+            <p class="item-produto">Nome do Produto</p>
             <div>
                 <i class="bi bi-dash-square"></i>
-                <p>1</p>
+                <p class="quantidade">1</p>
                 <i class="bi bi-plus-square"></i>
             </div>
         </div>
 
-        <div>
+        <div id="preco-produto">
             <i class="bi bi-trash"></i>
-            <p>R$ 00000,00</p>
+            <p class="preco">R$ 00000,00</p>
         </div>
 
     </section>
 
     <section>
-        <div>
-            <img src="https://png.pngtree.com/pgn-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"" alt="
+        <div class="imagem-do-produto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopQRW8rUjClTxl_3tWu38NUCE_g2ChvkNoQ&usqp=CAU"
+                alt="
                 imagem do produto">
         </div>
         <div>
-            <p>Nome do Produto</p>
+            <p class="nome-produto">Nome do Produto</p>
             <div>
                 <i class="bi bi-dash-square"></i>
-                <p>1</p>
+                <p class="quantidade">1</p>
                 <i class="bi bi-plus-square"></i>
             </div>
         </div>
 
-        <div>
+        <div class="preco">
             <i class="bi bi-trash"></i>
-            <p>R$ 00000,00</p>
+            <p class="quantidade">R$ 00000,00</p>
         </div>
 
     </section>
 
     <section>
         <input type="text" placeholder="Digite seu cupom aqui">
-        <button>Aplicar</button>
+        <button class="butao-aplicar">Aplicar</button>
     </section>
 
-    <section>
-        <div>
-            <p>TOTAL</p>
-            <p>DELIVERY</p>
+    <section id="total">
+        <div class="total">
+            <p class="total-paragrafo">TOTAL</p>
+            <p class="total-paragrafo">DELIVERY</p>
         </div>
 
-        <button>Ir para Pagamento</button>
+        <button class="ir-pagamento">Ir para Pagamento</button>
 
     </section>
 
