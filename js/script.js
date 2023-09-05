@@ -7,7 +7,16 @@ btnAdd.addEventListener("click", function () {
   if (inputValor === "") {
     alert("Você não preencheu os campos");
   } else {
-    alert("Login realizado com sucesso");
+    document.querySelector("#mensagem-ok").insertAdjacentHTML(
+      "afterend",
+      `<div class="card-teste">
+          <span>Login efetuado com sucesso</span></div>`
+    );
+
+    let mensagem = document.querySelector(".card-teste");
+    setTimeout(() => {
+      mensagem.style.display = "none";
+    }, 3000);
   }
   document.querySelector("#meuInput").value = "";
 });

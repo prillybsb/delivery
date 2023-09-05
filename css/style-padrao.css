@@ -573,7 +573,40 @@ section {
     background-color: #0056b3;
    
   }
+
+  /*login css*/
+
+  .card-teste{
+   display: flex;
+   position: relative;
+   justify-content: center;
+   margin: auto;
+   margin-top: 2rem;
+   width: 50%;
+   background-color: orange;
+   border: 3px solid;
+   border-radius: 2rem;
+   z-index: 999;
+   cursor: pointer;
+  }
   
+  /*coração pagina produto*/
+  i.bi-heart-fill{
+    font-size: 70px;
+    text-shadow: 2px 2px 2px black;
+    color: var(--cor-da-empresa);
+    padding-right: 1.5rem;
+  }
+
+  i.bi-heart-fill:hover {
+        color: #fce2c1;
+  }
+  
+  i.red{
+    color: red;
+  }
+
+
   
 /*usando midia queries para transformar nossa pagina acessivel a tela menores* home.html\*/
 
