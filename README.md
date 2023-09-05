@@ -1,2 +1,2 @@
 # delivery
-Projeto Delivery-HTML - ilia-italents
+Projeto Delivery-HTML-CSS-Javascript - ilia-italents
