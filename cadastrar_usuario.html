@@ -3,10 +3,15 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style-padrao.css">
-    <title>usuarios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/produto.css" />
+    <link rel="stylesheet" href="./css/carrinho.css" /> -->
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/padrao-telas.css">
+    <title>CADASTRO DE USUÁRIO</title>
 </head>
 
 <body>
@@ -14,97 +19,100 @@
         <nav class="menu">
             <ul class="ul-menu">
                 <a href="login.html">
-                    <li><i class="bi bi-file-person"></i></li>
+                    <li id="image-usuario"><i class="bi bi-file-person"></i></li>
                 </a>
 
-                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i>
-                    <p class="nome-localizacao">Brasília, DF</p>
+                <li id="image-localizacao">
+                    <i class="bi bi-geo-alt"></i>
+                    <input id="cep" type="text" placeholder="Digite seu CEP">
+                    <p class="nome-localizacao"></p>
+                    <button onclick="consultaEndereco()">OK</button>
                 </li>
-                <li><i class="bi bi-card-image"></i></li>
+
+                <li class="logo-empresa">
+                    <i class="bi bi-card-image"></i>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <section class="secao-login">
+        <h1 id="nome-empresa">CADASTRO USUÁRIO</h1>
+        <img src="" alt="" />
 
-    <section id="cadastro-usuario">
-        <h1 class="cadastro-usuario">Cadastro de usuário</h1>
-        <form action="" class="formulario">
-            <div class="input">
-                <label for="nome">Nome</label>
-                <input id="nome" type="text">
+        <form action="">
+            <div class="login-senha">
+                <label for="" class="login">NOME</label>
+                <input type="text" class="input" placeholder="Digite seu nome" />
 
-                <label for="email">E-mail</label>
-                <input id="email" type="email">
+                <label for="" class="login">E-MAIL</label>
+                <input type="email" class="input" placeholder="Digite seu e-mail" />
 
-                <label for="senha">Senha</label>
-                <input id="senha" type="password">
+                <label for="" class="login">SENHA</label>
+                <input type="password" class="input" placeholder="Digite sua senha" />
 
-                <label for="imagem">Imagem</label>
-                <input id="imagem" type="text">
+                <label for="" class="login">IMAGEM</label>
+                <input type="text" class="input" placeholder="Insira o link da imagem" />
 
-                <label for="endereco">Endereço</label>
-                <input id="endereco" type="text">
+                <label for="" class="login">ENDEREÇO</label>
+                <input type="text" class="input" placeholder="Digite seu endereço" />
 
-                <label for="favoritos">Produtos Favoritos</label>
-                <input id="favoritos" type="text">
+                <label for="" class="login">PRODUTOS FAVORITOS</label>
+                <input type="text" class="input" placeholder="Digite seus produtos favoritos" />
 
-                <label for="pedidos">Pedidos</label>
-                <input id="pedidos" type="text">
+                <!-- <label for="" class="login">PEDIDOS</label>
+          <input type="text" class="input" placeholder="Digite sua senha" /> -->
 
-                <label for="admin">ADMIN</label>
-                <input id="admin-sim" type="radio" name="admin" value="Sim"> Sim
-                <input id="admin-nao" type="radio" name="admin" value="Não"> Não
-
-                <button id="cadastrar-usuario" class="butao-cadastrar-usuario">Cadastrar Usuário</button>
+                <label class="login">ADMIN</label>
+                <div class="radio">
+                    <input for="admin" type="radio" id="admin" name="admin" /><label for="admin"
+                        id="admin">Admin</label>
+                    <input type="radio" id="cliente" name="admin" /><label for="cliente" id="cliente">Cliente</label>
+                </div>
+                <button class="botao">CADASTRAR USUÁRIO</button>
             </div>
         </form>
-
     </section>
 
     <footer id="footer" class="footer">
         <ul class="footer-card">
-
-            <a href="home.html">
-                <li class="footer-item">
+            <a href="index.html">
+                <li id="footer-item">
                     <i class="bi bi-house-fill"></i>
-                    <p class="footer-nome-item">HOME</p>
+                    <p class="footer-name-item">HOME</p>
                 </li>
             </a>
 
             <a href="cadastrar_usuario.html">
-                <li class="footer-item">
+                <li id="footer-item">
                     <i class="bi bi-emoji-smile"></i>
-                    <p class="footer-nome-item">Cadastro do usuário</p>
+                    <p class="footer-name-item">CADASTRO USUÁRIO</p>
                 </li>
             </a>
 
-
-            <a href="">
-                <li class="footer-item">
+            <a href="cadastro_produto.html">
+                <li id="footer-item">
                     <i class="bi bi-upc-scan"></i>
-                    <p class="footer-nome-item">Cadastro de Produto</p>
+                    <p class="footer-name-item">CADASTRO PRODUTO</p>
                 </li>
             </a>
 
             <a href="carrinho.html">
-                <li class="footer-item">
+                <li id="footer-item">
                     <i class="bi bi-cart"></i>
-                    <p class="footer-nome-item">carinho</p>
+                    <p class="footer-name-item">CARRINHO</p>
                 </li>
             </a>
 
             <a href="produto.html">
-                <li class="footer-item">
+                <li id="footer-item">
                     <i class="bi bi-stickies"></i>
-                    <p class="footer-nome-item">Produto</p>
+                    <p class="footer-name-item">PRODUTO</p>
                 </li>
             </a>
         </ul>
     </footer>
-
-    </main>
-
-    <script src="./js/script-cadastrar-usuario.js"></script>
+    <script src="./js/script-home.js"></script>
 </body>
 
 </html>

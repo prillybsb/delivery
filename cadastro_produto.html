@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <!-- <link rel="stylesheet" href="./css/home.css" /> -->
     <link rel="stylesheet" href="./css/produto.css" />
-    <link rel="stylesheet" href="./css/carrinho.css" />
-    <!-- <link rel="stylesheet" href="./css/login.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/carrinho.css" /> -->
+    <link rel="stylesheet" href="./css/login.css" />
     <link rel="stylesheet" href="./css/padrao-telas.css">
-    <title>PRODUTO</title>
+    <title>CADASTRO DE PRODUTO</title>
 </head>
 
 <body>
@@ -36,39 +36,29 @@
         </nav>
     </header>
 
-    <section class="favorite">
-        <a href="index.html"><i class="bi bi-chevron-double-left"></i></a>
-        <i class="bi bi-heart-fill"></i>
-    </section>
+    <section class="secao-login">
+        <h1 id="nome-empresa">NOME DA EMPRESA</h1>
+        <img src="" alt="" />
 
-    <section class="secao-produto">
-        <h1 id="nome-empresa">NOME DO PRODUTO</h1>
-        <p id="descricao-produto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aut
-            enim illum ipsum cum modi!
-        </p>
-        <div class="imagem-quantidade">
-            <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
-                alt="Logo exemplo" id="imagem-produto" />
-            <div class="quantidade-produto">
-                <i class="bi bi-dash-square"></i>
-                <p class="numero-produto">1</p>
-                <i class="bi bi-plus-square"></i>
-            </div>
+        <div class="login-senha">
+            <label for="" class="login">NOME DO PRODUTO</label>
+            <input type="text" class="input" placeholder="Digite o nome do produto" />
+
+            <label for="" class="login">DESCRIÇÃO DO PRODUTO</label>
+            <input type="text" class="input" placeholder="Digite a descrição do produto" />
+
+            <label for="" class="login">CATEGORIA</label>
+            <input type="text" class="input" placeholder="Digite a categoria do produto" />
+
+            <label for="" class="login">PREÇO UNITÁRIO</label>
+            <input type="text" class="input" placeholder="Digite o preço unitário produto" />
+
+            <label for="" class="login">CÓDIGO DE BARRAS</label>
+            <input type="text" class="input" placeholder="Digite o código de barras do produto" />
+
+            <button class="botao">CADASTRAR PRODUTO</button>
         </div>
 
-        <div class="precos-poduto">
-            <p class="precos">Preço unitário</p>
-            <p class="precos-valores">R$ 0000,00</p>
-
-            <p class="precos">Preço Total</p>
-            <p class="precos-valores">R$ 0000,00</p>
-        </div>
-
-        <div class="botao-carrinho">
-            <!-- <i class="bi bi-cart-plus"></i> -->
-            <button class="botao-add-carrinho"></i>ADICIONAR AO CARRINHO</button>
-        </div>
     </section>
 
     <footer id="footer" class="footer">
@@ -109,10 +99,7 @@
             </a>
         </ul>
     </footer>
-
-    <script src="./js/script-produto.js"></script>
     <script src="./js/script-home.js"></script>
 </body>
-
 
 </html>

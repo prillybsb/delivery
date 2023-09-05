@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style-padrao.css">
-    <title>login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- <link rel="stylesheet" href="./css/produto.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/carrinho.css" /> -->
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/padrao-telas.css">
+    <title>LOGIN</title>
 </head>
 
 <body>
@@ -14,81 +18,88 @@
         <nav class="menu">
             <ul class="ul-menu">
                 <a href="login.html">
-                    <li><i class="bi bi-file-person"></i></li>
+                    <li id="image-usuario"><i class="bi bi-file-person"></i></li>
                 </a>
 
-                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i>
-                    <p class="nome-localizacao">Brasília, DF</p>
+                <li id="image-localizacao">
+                    <i class="bi bi-geo-alt"></i>
+                    <input id="cep" type="text" placeholder="Digite seu CEP">
+                    <p class="nome-localizacao"></p>
+                    <button onclick="consultaEndereco()">OK</button>
                 </li>
-                <li><i class="bi bi-card-image"></i></li>
+
+                <li class="logo-empresa">
+                    <i class="bi bi-card-image"></i>
+                </li>
             </ul>
         </nav>
     </header>
 
 
-    <section id="nome-da-empresa">
-        <h1 class="titulo">Doces da Pri
-            <img src="https://png.pngtree.com/pgn-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"" alt=" ">
-        </h1>
+    <section class="secao-login">
+        <h1 id="nome-empresa">NOME DA EMPRESA</h1>
+        <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
+            alt="" />
 
-        <section id='mensagem-ok' class='mensagem-ok'>
+        <section id="mensagem-ok" class="mensagem-ok">
+
+        </section>
+
+        <div class="login-senha">
+            <label for="" class="login">LOGIN</label>
+            <input id="myInput" type="text" class="input" placeholder="Digite seu user-login" />
+
+            <label for="" class="login">SENHA</label>
+            <input id="myInput" type="password" class="input" placeholder="Digite sua senha" />
+
+            <button id="addBtn" class="botao">REALIZAR LOGIN</button>
+        </div>
+
     </section>
 
-    <div class=" inputs">
-            <label for="">Login</label>
-            <input id="meuInput" type=" text">
 
-            <label for="">Senha</label>
-            <input id="meuInput" type=" text">
-
-            <button id="addBotao" class="botao-login">Realizar Login</button>
-            </div>
-    </section>
 
     <footer id="footer" class="footer">
         <ul class="footer-card">
-
-            <a href="home.html">
-                <li class="footer-item">
+            <a href="index.html">
+                <li id="footer-item">
                     <i class="bi bi-house-fill"></i>
-                    <p class="footer-nome-item">HOME</p>
+                    <p class="footer-name-item">HOME</p>
                 </li>
             </a>
 
             <a href="cadastrar_usuario.html">
-                <li class="footer-item">
+                <li id="footer-item">
                     <i class="bi bi-emoji-smile"></i>
-                    <p class="footer-nome-item">Cadastro do usuário</p>
+                    <p class="footer-name-item">CADASTRO USUÁRIO</p>
                 </li>
             </a>
 
-
-            <a href="">
-                <li class="footer-item">
+            <a href="cadastro_produto.html">
+                <li id="footer-item">
                     <i class="bi bi-upc-scan"></i>
-                    <p class="footer-nome-item">Cadastro de Produto</p>
+                    <p class="footer-name-item">CADASTRO PRODUTO</p>
                 </li>
             </a>
 
             <a href="carrinho.html">
-                <li class="footer-item">
+                <li id="footer-item">
                     <i class="bi bi-cart"></i>
-                    <p class="footer-nome-item">carinho</p>
+                    <p class="footer-name-item">CARRINHO</p>
                 </li>
             </a>
 
             <a href="produto.html">
-                <li class="footer-item">
+                <li id="footer-item">
                     <i class="bi bi-stickies"></i>
-                    <p class="footer-nome-item">Produto</p>
+                    <p class="footer-name-item">PRODUTO</p>
                 </li>
             </a>
         </ul>
     </footer>
 
-    </main>
-
     <script src="./js/script.js"></script>
+    <script src="./js/script-home.js"></script>
 </body>
 
 </html>

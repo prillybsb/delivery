@@ -3,10 +3,15 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style-padrao.css">
-    <title>carrinho</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- <link rel="stylesheet" href="./css/home.css" /> -->
+    <link rel="stylesheet" href="./css/produto.css" />
+    <link rel="stylesheet" href="./css/carrinho.css" />
+    <!-- <link rel="stylesheet" href="./css/login.css"/> -->
+    <link rel="stylesheet" href="./css/padrao-telas.css">
+    <title>CARRINHO</title>
 </head>
 
 <body>
@@ -14,127 +19,133 @@
         <nav class="menu">
             <ul class="ul-menu">
                 <a href="login.html">
-                    <li><i class="bi bi-file-person"></i></li>
+                    <li id="image-usuario"><i class="bi bi-file-person"></i></li>
                 </a>
 
-                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i>
-                    <p class="nome-localizacao">Brasília, DF</p>
+                <li id="image-localizacao">
+                    <i class="bi bi-geo-alt"></i>
+                    <input id="cep" type="text" placeholder="Digite seu CEP">
+                    <p class="nome-localizacao"></p>
+                    <button onclick="consultaEndereco()">OK</button>
                 </li>
-                <li><i class="bi bi-card-image"></i></li>
+
+                <li class="logo-empresa">
+                    <i class="bi bi-card-image"></i>
+                </li>
             </ul>
         </nav>
     </header>
 
-
-    <section id="carrinho">
-        <i class="bi bi-chevron-double-left"></i>
-        <p class="carrinho">Carrinho</p>
-        <i class="bi bi-cart-x"></i>
+    <section class="carrinho">
+        <a href="index.html"><i class="bi bi-chevron-double-left"></i></a>
+        <h1 id="nome-empresa">CARRINHO</h1>
+        <a href=""><i class="bi bi-cart-x"></i></a>
     </section>
 
-    <section class="imagem-produto">
-        <div class="imagem-do-produto">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopQRW8rUjClTxl_3tWu38NUCE_g2ChvkNoQ&usqp=CAU"
-                alt="
-                imagem do produto">
+    <section class="produtos-carrinho">
+        <div class="img-carrinho">
+            <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
+                alt="Logo exemplo" id="imagem-produto-carrinho" />
         </div>
-        <div id="nome-produto">
-            <p class="item-produto">Nome do Produto 1</p>
-            <div>
+
+        <div class="nome-quantidade">
+            <h1 id="nome-produto">NOME DO PRODUTO 1</h1>
+            <div class="quantidade">
                 <i class="bi bi-dash-square"></i>
-                <p class="quantidade">1</p>
+                <p class="numero-produto">1</p>
                 <i class="bi bi-plus-square"></i>
             </div>
         </div>
 
-        <div id="preco-produto">
+        <div class="lixo-valor">
             <i class="bi bi-trash"></i>
-            <p class="preco">R$ 00000,00</p>
+            <p class="valor-unitario">R$ 0000,00</p>
         </div>
-
     </section>
 
-    <section class="imagem-produto">
-        <div class="imagem-do-produto">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopQRW8rUjClTxl_3tWu38NUCE_g2ChvkNoQ&usqp=CAU"
-                alt="
-                imagem do produto">
+
+    <section class="produtos-carrinho">
+        <div class="img-carrinho">
+            <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
+                alt="Logo exemplo" id="imagem-produto-carrinho" />
         </div>
-        <div>
-            <p class="nome-produto">Nome do Produto 2</p>
-            <div>
+
+        <div class="nome-quantidade">
+            <h1 id="nome-produto">NOME DO PRODUTO 2</h1>
+            <div class="quantidade">
                 <i class="bi bi-dash-square"></i>
-                <p class="quantidade">1</p>
+                <p class="numero-produto">1</p>
                 <i class="bi bi-plus-square"></i>
             </div>
         </div>
 
-        <div class="preco">
+        <div class="lixo-valor">
             <i class="bi bi-trash"></i>
-            <p class="quantidade">R$ 00000,00</p>
+            <p class="valor-unitario">R$ 0000,00</p>
         </div>
-
     </section>
 
-    <section>
-        <input type="text" placeholder="Digite seu cupom aqui">
-        <button class="butao-aplicar">Aplicar</button>
+    <section class="cupom">
+        <input type="text" placeholder="CUPOM" class="input-cupom">
+        <button class="botao-aplicar">Aplicar</button>
     </section>
 
-    <section id="total">
-        <div class="total">
-            <p class="total-paragrafo">TOTAL</p>
-            <p class="total-paragrafo">DELIVERY</p>
+    <section class="pagamento">
+        <div class="precos-poduto">
+            <p class="precos">Preço Total</p>
+            <p class="precos-valores">R$ 0000,00</p>
+
+            <p class="precos">Preço Delivery</p>
+            <p class="precos-valores">R$ 0000,00</p>
         </div>
 
-        <button class="ir-pagamento">Ir para Pagamento</button>
+        <div class="botao-carrinho">
+            <button class="botao-add-carrinho">REALIZAR PAGAMENTO</button>
+        </div>
 
     </section>
 
     <footer id="footer" class="footer">
         <ul class="footer-card">
-
-            <a href="home.html">
-                <li class="footer-item">
+            <a href="index.html">
+                <li id="footer-item">
                     <i class="bi bi-house-fill"></i>
-                    <p class="footer-nome-item">HOME</p>
+                    <p class="footer-name-item">HOME</p>
                 </li>
             </a>
 
             <a href="cadastrar_usuario.html">
-                <li class="footer-item">
+                <li id="footer-item">
                     <i class="bi bi-emoji-smile"></i>
-                    <p class="footer-nome-item">Cadastro do usuário</p>
+                    <p class="footer-name-item">CADASTRO USUÁRIO</p>
                 </li>
             </a>
 
-
-            <a href="">
-                <li class="footer-item">
+            <a href="cadastro_produto.html">
+                <li id="footer-item">
                     <i class="bi bi-upc-scan"></i>
-                    <p class="footer-nome-item">Cadastro de Produto</p>
+                    <p class="footer-name-item">CADASTRO PRODUTO</p>
                 </li>
             </a>
 
             <a href="carrinho.html">
-                <li class="footer-item">
+                <li id="footer-item">
                     <i class="bi bi-cart"></i>
-                    <p class="footer-nome-item">carinho</p>
+                    <p class="footer-name-item">CARRINHO</p>
                 </li>
             </a>
 
             <a href="produto.html">
-                <li class="footer-item">
+                <li id="footer-item">
                     <i class="bi bi-stickies"></i>
-                    <p class="footer-nome-item">Produto</p>
+                    <p class="footer-name-item">PRODUTO</p>
                 </li>
             </a>
         </ul>
     </footer>
 
-    </main>
-
     <script src="./js/script-carrinho.js"></script>
+    <script src="./js/script-home.js"></script>
 </body>
 
 </html>
